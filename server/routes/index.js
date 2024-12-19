@@ -6,9 +6,13 @@ const orderRoute = require("./orderRoute");
 const paymentRoute = require("./paymentRoute");
 const productRoute = require("./productRoute");
 
+const contractRoute = require("./benjamin-apitest");
+
 router.route("/user", userRoute);
 router.route("/order", orderRoute);
 router.route("/payment", paymentRoute);
 router.route("/product", productRoute);
+
+router.route("/benjamin-apitest", contractRoute);
 
 module.exports = router;
